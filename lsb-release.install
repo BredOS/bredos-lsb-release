@@ -1,0 +1,16 @@
+post_install() {
+  sed -e "/BredOS release <VERSION> (ISO-Rolling)/d" -i /etc/arch-release
+  sed -e "/BredOS Linux release/d" -i /etc/arch-release
+  echo "BredOS Linux release" >> /etc/arch-release
+}
+
+post_upgrade() {
+  sed -e "/BredOS release <VERSION> (ISO-Rolling)/d" -i /etc/arch-release
+  sed -e "/BredOS Linux release/d" -i /etc/arch-release
+  echo "BredOS Linux release" >> /etc/arch-release
+}
+
+pre_remove() {
+  sed -e "/BredOS release <VERSION> (ISO-Rolling)/d" -i /etc/arch-release
+  sed -e "/BredOS Linux release/d" -i /etc/arch-release
+}

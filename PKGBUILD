@@ -1,7 +1,7 @@
 # Maintainer: Snehit Sah <snehitsah@protonmail.com>
 
 pkgname=lsb-release
-pkgver=1.0
+pkgver=1.4
 pkgrel=1
 pkgdesc="LSB version query program"
 arch=('any')

@@ -37,7 +37,7 @@ package() {
   echo "LSB_VERSION=$pkgver" >> "$pkgdir/etc/lsb-release"
   echo "DISTRIB_ID=BredOS" >> "$pkgdir/etc/lsb-release"
   echo "DISTRIB_RELEASE=rolling" >> "$pkgdir/etc/lsb-release"
-  echo "DISTRIB_DESCRIPTION=\"BredOS Linux\"" >> "$pkgdir/etc/lsb-release"
+  echo "DISTRIB_DESCRIPTION=\"BredOS, the OS baked for you!\"" >> "$pkgdir/etc/lsb-release"
 
   install -Dm 644 lsb_release.1.gz "$pkgdir/usr/share/man/man1/lsb_release.1.gz"
   install -Dm 755 lsb_release "$pkgdir/usr/bin/lsb_release"
